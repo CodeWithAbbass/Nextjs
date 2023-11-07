@@ -3,7 +3,9 @@
 import { NextResponse } from "next/server";
 
 const middleware = (req) => {
-  // return NextResponse.redirect(new URL("/login", req.url));
+  // if (req.nextUrl.pathname === "/blog") {
+  return NextResponse.redirect(new URL("/login", req.url));
+  // }
 };
 export default middleware;
 
@@ -11,6 +13,6 @@ export default middleware;
 // export const config = {
 //   matcher: "/blog/:path*",
 // };
-// export const config = {
-//   matcher: ["/about/:path*", "/dashboard/:path*"],
-// };
+export const config = {
+  matcher: ["/about/:path*", "/blog/posts"],
+};

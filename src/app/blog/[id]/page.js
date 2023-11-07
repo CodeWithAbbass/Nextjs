@@ -14,9 +14,8 @@ const Post = ({ params }) => {
   console.log("ID: ", id, "Params: ", params);
   return (
     <div>
-      <h1>Blog</h1> <h2>pathname:- {router.pathname}</h2>
-      <h2>query:- {router.query}</h2>
-      <h2>asPath:- {router.asPath}</h2>
+      <h1>Single Blog Page</h1>
+      <h2>Last Path:- {id}</h2>
       <h2>Path:- {path}</h2>
     </div>
   );

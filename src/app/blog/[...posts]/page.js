@@ -4,7 +4,7 @@ const Posts = ({ params }) => {
   // Catch All Segments
   return (
     <div className="Posts">
-      <h1>All Posts</h1>
+      <h1>Segments</h1>
       <br />
       <h2>This is Called Catch All Segments of Routes</h2>
       <br />
