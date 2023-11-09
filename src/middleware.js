@@ -14,5 +14,5 @@ export default middleware;
 //   matcher: "/blog/:path*",
 // };
 export const config = {
-  matcher: ["/about/:path*", "/blog/posts"],
+  matcher: ["/about/:path*"],
 };

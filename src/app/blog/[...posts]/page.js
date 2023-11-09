@@ -15,7 +15,7 @@ const Posts = ({ params }) => {
         <br />
         ||
         <br />
-        If Route doesn't Exist. it shows AllPosts.
+        If Route doesn't Exist. it shows This Page.
       </h3>
     </div>
   );
