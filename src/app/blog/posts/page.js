@@ -1,5 +1,7 @@
 // "use client";
 
+import Button from "./Button";
+
 // ****************************************************************
 //                  Client Side Rendering
 // ****************************************************************
@@ -59,8 +61,13 @@ const AllPosts = async () => {
       <h1>All Post</h1>
       <ul>
         {Posts.map((item, index) => {
-          const { body, id, reactions, title, userId } = item;
-          return <li key={index}>Post Title: {title}</li>;
+          const { body, id, reactions, title, userId, } = item;
+          return (
+            <>
+              <li key={index}>Post Title: {title}</li>
+              <Button userId={userId} />
+            </>
+          );
         })}
       </ul>
     </div>
