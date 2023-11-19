@@ -13,6 +13,7 @@ export const metadata = {
 const Home = () => {
   const [color, setColor] = useState(false);
   const { red, green, orange } = custom;
+
   return (
     <main className={styles.main}>
       <h1 className={color ? red : green}>Home Page</h1>

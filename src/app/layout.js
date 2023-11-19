@@ -20,6 +20,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const Development = process.env.NODE_ENV;
+  const NAME = process.env.DEV_NAME;
+  console.log(Development, NAME);
   return (
     <html lang="en">
       <head>
